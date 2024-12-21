@@ -1,0 +1,134 @@
+/* Global Styles */
+body {
+    background-color: #f8f9fa;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.sidebar {
+    min-width: 250px;
+    background-color: #343a40;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.sidebar h2 {
+    color: #17a2b8;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.sidebar .nav-link {
+    color: white;
+    padding: 12px 20px;
+    border-radius: 4px;
+    margin: 5px 0;
+    font-size: 16px;
+    transition: background-color 0.3s ease, padding-left 0.3s ease;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #495057;
+    padding-left: 30px;
+}
+
+.sidebar .nav-link.active {
+    background-color: #007bff;
+    font-weight: bold;
+}
+
+.sidebar .nav-link.bg-danger {
+    background-color: #dc3545;
+}
+
+.sidebar .nav-link.bg-danger:hover {
+    background-color: #c82333;
+}
+
+.sidebar .nav-item {
+    transition: margin-bottom 0.3s ease;
+}
+
+.sidebar .nav-item:last-child {
+    margin-top: auto;
+}
+
+.main-content {
+    margin-left: 260px;
+    padding: 30px;
+    background-color: #fff;
+    min-height: 100vh;
+    transition: margin-left 0.3s ease;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #007bff;
+}
+
+.navbar .navbar-brand {
+    color: white;
+    font-size: 1.25rem;
+}
+
+.navbar .navbar-brand:hover {
+    color: #e2e6ea;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        position: relative;
+        min-width: 100%;
+        height: auto;
+        padding-top: 15px;
+        box-shadow: none;
+    }
+
+    .sidebar h2 {
+        font-size: 22px;
+    }
+
+    .sidebar .nav-link {
+        font-size: 14px;
+        text-align: center;
+        padding: 10px 15px;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .sidebar .nav-link.active {
+        background-color: #007bff;
+    }
+}
+
+@media (max-width: 576px) {
+    .sidebar h2 {
+        font-size: 18px;
+    }
+
+    .sidebar .nav-link {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+
+    .main-content {
+        padding: 15px;
+    }
+
+    .navbar .navbar-brand {
+        font-size: 1.125rem;
+    }
+}
